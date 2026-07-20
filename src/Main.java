@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import view.Parameters;
 import view.SunDisplay;
 import view.MercuryDisplay;
 
@@ -12,13 +13,15 @@ public class Main {
 
         window.setSize(800, 600);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         window.getContentPane().setBackground(Color.BLACK);
 
-        SunDisplay sun = new SunDisplay();
+        Parameters parameter = new Parameters();
+        window.add(parameter, BorderLayout.WEST);
+
+        /*SunDisplay sun = new SunDisplay();
         window.add(sun);
 
-        /*MercuryDisplay mercury = new MercuryDisplay();
+        MercuryDisplay mercury = new MercuryDisplay();
         window.add(mercury);*/
 
 

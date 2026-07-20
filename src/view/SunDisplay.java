@@ -20,6 +20,13 @@ public class SunDisplay extends JPanel {
 
         g.setColor(color);
         g.fillOval(700, 400, rayon, rayon);
+
+        Graphics2D g2 = (Graphics2D) g;
+        //Give a better look to the circle
+        g2.setRenderingHint(
+                RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON);
+
     }
 
 }
